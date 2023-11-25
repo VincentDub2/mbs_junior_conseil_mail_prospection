@@ -1,0 +1,20 @@
+Objet: Ensemble, soyons performants dans un monde qui change !
+---
+Bonjour {salutation} {nom},
+ 
+Je me permets de vous contacter car je suis membre de MBS Junior Conseil, une association étudiante qui accompagne les entreprises dans leurs projets de développement.
+ 
+En 2022, MBS Junior Conseil a été reconnu par la Confédération Nationale des Junior-Entreprise comme faisant parti des trois structures les plus prometteuses du mouvement. 
+
+Nous pouvons vous apporter notre aide dans divers domaines tels que l’étude de marché, l’étude de l’image, la communication et le marketing, la finance et la RSE. Pour réaliser nos missions, nous faisons appel aux compétences de nos étudiants et à l’expertise des enseignants-chercheurs de Montpellier Business School. 
+
+N’hésitez à nous contacter, nous serions ravis d’échanger avec vous !
+ 
+Dans l’attente de votre réponse, je vous prie de croire, {salutation}, à l’expression de mes salutations distinguées.
+
+Bonne journée, 
+
+Bien à vous, 
+
+{envoyeur}
+
