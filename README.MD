@@ -32,6 +32,7 @@ Ce projet fournit un script Python pour automatiser l'envoi d'e-mails personnali
     SMTP_USER=votre_adresse_email
     SMTP_PASSWORD=votre_mot_de_passe
     ENVOYEUR=votre_nom_et_prenom
+    header_email=le_nom_affiche_dans_le_client_email
     ```
 
 4. **Préparer le Fichier CSV** : Structurez `emails.csv` avec les colonnes `Nom`, `Sexe` et `Email`.

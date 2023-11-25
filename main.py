@@ -1,6 +1,8 @@
 import csv
 import smtplib
 from email.mime.text import MIMEText
+from email.header import Header
+from email.utils import formataddr
 
 from dotenv import load_dotenv
 import os
@@ -15,9 +17,10 @@ smtp_port = os.getenv('SMTP_PORT')
 smtp_user = os.getenv('SMTP_USER')
 smtp_password = os.getenv('SMTP_PASSWORD')
 envoyeur=os.getenv('ENVOYEUR')
+header_email=os.getenv('HEADER_EMAIL')
 
 # Assurez-vous que vos variables ne sont pas None
-if not all([smtp_server, smtp_port, smtp_user, smtp_password]):
+if not all([smtp_server, smtp_port, smtp_user, smtp_password,envoyeur]):
     print("Les informations d'authentification SMTP ne sont pas définies correctement.")
     exit(1)
 
@@ -68,9 +71,10 @@ with open('emails.csv', newline='') as csvfile:
             
 
             # Créer un objet MIMEText
-            msg = MIMEText(email_body)
-            msg['Subject'] = email_subject
-            msg['From'] = smtp_user
+            msg = MIMEText(email_body, 'plain', 'utf-8')
+            msg['Subject'] = Header(email_subject, 'utf-8')
+            # Formatage de l'en-tête "From" avec le nom et l'adresse e-mail
+            msg['From'] = formataddr((Header(header_email, 'utf-8').encode(),smtp_user))
             msg['To'] = email
             # Envoyer l'e-mail
             try:
