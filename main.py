@@ -14,8 +14,7 @@ smtp_server = os.getenv('SMTP_SERVER')
 smtp_port = os.getenv('SMTP_PORT')
 smtp_user = os.getenv('SMTP_USER')
 smtp_password = os.getenv('SMTP_PASSWORD')
-
-envoyeur="Quentin Privat"
+envoyeur=os.getenv('ENVOYEUR')
 
 # Assurez-vous que vos variables ne sont pas None
 if not all([smtp_server, smtp_port, smtp_user, smtp_password]):
